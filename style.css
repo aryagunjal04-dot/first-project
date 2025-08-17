@@ -57,6 +57,7 @@ nav{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    font-size:large;
 }
 .text-box h1{
     font-size: 50px;
@@ -73,22 +74,23 @@ nav{
     border: none;
     padding:12px 34px;
     font-size: 13px;
-    background: transparent;
+    background: red;
     position: relative;
     cursor: pointer;
-    /*border: 1px solid red;
-    background: red;
-    transition: 1s;*/
+    border: 1px solid red;
+    background: transparent;
+    transition: 0.5s;
 }
 .hero-btn:hover{
     padding:15px 40px;
     border: 1px solid white;
     outline: none;
-    color: wheat;
+    color: black;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 12px;
+    background:rgb(64, 148, 220);
 }
 /*.hero-btn ::after{
     content: '';
@@ -184,21 +186,25 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-    background:wheat ;
+    background:whitesmoke ;
     transition: 1s;
 }
-.layer:h3{
+.layer h3{
     width: 100%;
-    font-weight: 200%;
-    color: black;
-    font-size:26px;
+    font-weight: 500;
+    color:black;
+    font-size: 26px;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50px);
-   /* transition: opacity .3s ease-in-out;*/
+    left:50%;
+    transform: translate(-50%);
     position: absolute;
-    opacity: 0.3s;
+    opacity: 0;
     transition: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
 }
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 2;
+}
+
 
